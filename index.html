@@ -3,11 +3,30 @@
   <head>
     <title>PUZ simulation</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="pixi.min.js"></script>
+    
   </head>
   <body>
     <section class="container">
-        <h1>PUZ simulation</h1>
-        <div></div>
+        <h1>PUZ symulacja - Zagadka 2.5</h1>
+        <h2>Michał Pazio s18451</h2>
+        <div class="separator"></div>
+        <section class="results">
+          <div>
+            <div>Number of boxes:</div>
+            <input id="numberOfBoxesInput" value="100" type="number" onchange="changeNumberOfBoxes()"/>
+          </div>
+          <div>
+            <div>Won games:</div>
+            <div class="gamesNumber" id="won">0</div>
+          </div>
+          <div>
+            <div>Lost games:</div>
+            <div class="gamesNumber" id="lost">0</div>
+          </div>
+        </section>
+        <div id="canvasContainer"></div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>

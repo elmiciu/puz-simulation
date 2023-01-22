@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -32,12 +34,64 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+body {
+    background-color: #0C0D14;
+    user-select: none;
+    font-family: 'Lato';
+}
+
 .container {
     width: 1024px;
     margin: 0 auto;
 }
 
 h1 {
+    color: whitesmoke;
+    font-size: 48px;
     margin: 0;
     text-align: center;
+}
+
+h2 {
+    color: #d3d3d3;
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+}
+
+.separator {
+    border-top: 1px solid #d3d3d3;
+    width: 80%;
+    margin: 32px auto 16px auto;
+}
+
+.results {
+    color: #d3d3d3;
+    display: flex;
+    text-align: center;
+    gap: 128px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gamesNumber {
+    font-size: 36px;
+}
+
+input {
+    font-family: inherit;
+    font-size: 24px;
+    padding: 6px 12px;
+    background-color: #1f1f1f;
+    color: #d3d3d3;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    width: 128px;
+    text-align: center;
+}
+
+input:focus {
+    border: 1px solid #838181;
 }
