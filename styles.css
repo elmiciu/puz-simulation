@@ -62,7 +62,7 @@ h2 {
 .separator {
     border-top: 1px solid #d3d3d3;
     width: 80%;
-    margin: 32px auto 16px auto;
+    margin: 16px auto;
 }
 
 .results {
@@ -96,3 +96,49 @@ input {
 input:focus {
     border: 1px solid #838181;
 }
+
+.puzzleContent {
+    margin-top: 12px;
+    color: #d3d3d3;
+    font-size: 18px;
+}
+
+.puzzleContent h2 {
+    text-align: left;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    width: 48px;
+    height: 48px;
+    border: 1px solid black;
+}
+
+.coveredBox {
+    background-color: #1c96c2;
+}
+
+.uncoveredBox {
+    background-color: #d9e6eb;
+    opacity: 0.1;
+}
+
+.winningBox {
+    background-color: #00ff00;
+}
+
+.losingBox {
+    background-color: #ff0000;
+}
+
