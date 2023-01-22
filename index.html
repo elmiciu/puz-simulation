@@ -10,24 +10,13 @@
     <section class="container">
         <h1>PUZ symulacja - Zagadka 2.5</h1>
         <h2>Michał Pazio s18451</h2>
+        <div class="nav">
+          <a href="#puzzleContentAnchor">Treść zagadki</a>
+          <a href="#simulation">Symulacja zagadki</a>
+        </div>
         <div class="separator"></div>
-        <section class="results">
-          <div>
-            <div>Liczba bramek:</div>
-            <input id="numberOfBoxesInput" value="3" type="number" onchange="changeNumberOfBoxes()"/>
-          </div>
-          <div>
-            <div>Wygrane gry:</div>
-            <div class="gamesNumber" id="won">0</div>
-          </div>
-          <div>
-            <div>Przegrane gry:</div>
-            <div class="gamesNumber" id="lost">0</div>
-          </div>
-        </section>
-        <div id="canvasContainer"></div>
         <section class="puzzleContent">
-          <h2>Treść zagadki</h2>
+          <h2 id="puzzleContentAnchor">Treść zagadki</h2>
           <div>Są trzy jednakowe bramki. Jedna z nich zawiera wartościową nagrodę (najnowsze Ferrari), natomiast pozostałe dwie są puste (kto pamięta teleturniej Idź na całość?).</div>
           <br />
           <div>Zostajesz poproszony o wybranie jednej bramki i robisz to. Gospodarz teleturnieju otwiera jedną z bramek – inną niż ta, którą wybrałeś i oczywiście bez samochodu.</div>
@@ -60,6 +49,23 @@
             </div>
           </div>
         </section>
+        <div class="separator"></div>
+        <h2 id="simulation">Symulacja zagadki</h2>
+        <section class="results">
+          <div>
+            <div>Liczba bramek:</div>
+            <input id="numberOfBoxesInput" value="3" type="number" onchange="changeNumberOfBoxes()"/>
+          </div>
+          <div>
+            <div>Wygrane gry:</div>
+            <div class="gamesNumber" id="won">0</div>
+          </div>
+          <div>
+            <div>Przegrane gry:</div>
+            <div class="gamesNumber" id="lost">0</div>
+          </div>
+        </section>
+        <div id="canvasContainer"></div>
     </section>
     <script src="main.js"></script>
   </body>
