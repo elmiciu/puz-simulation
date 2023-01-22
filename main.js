@@ -186,7 +186,7 @@ function drawBoxes(boxes){
         graphics.lineStyle(1, 0x000000, 1);
         graphics.beginFill(0x1c96c2, 1)
         if(boxes[i].empty){
-            graphics.beginFill(0xd9e6eb, 1)
+            graphics.beginFill(0xd9e6eb, 0.1)
         }
         if(secondPhase && !boxes[i].empty){
             if(boxes[i].winning)
