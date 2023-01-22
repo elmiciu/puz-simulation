@@ -1,6 +1,6 @@
 var app
 var won = 0, lost = 0
-var numberOfBoxes = 100
+var numberOfBoxes = 3
 var secondPhase = false
 
 function createApplication(){
@@ -41,7 +41,6 @@ function createBoxes(numberOfBoxes){
     let area = 1024 * 768
     let radius = Math.sqrt(area/(numberOfBoxes*Math.PI))*0.6
 
-    console.log(radius, numberOfBoxes)
     while(circles.length < numberOfBoxes){
         var circle = {
             x: getRandomInt(radius, 1024-radius), 
